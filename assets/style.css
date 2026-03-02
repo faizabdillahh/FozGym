@@ -66,3 +66,101 @@ body::before {
   padding: 5px; /* Add some padding inside the circle */
 }
 .table-actions a { margin-right: .25rem; }
+
+/* ===== Dashboard Premium Style ===== */
+
+/* ===== Dashboard Modern FozGym ===== */
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--foz-accent);
+}
+
+.dashboard-card .card-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Warna khusus tiap statistik */
+.stat-member {
+  color: var(--foz-primary);
+}
+
+.stat-class {
+  color: #9b59b6;
+}
+
+.stat-enroll {
+  color: var(--foz-accent);
+}
+
+/* Tombol lebih modern */
+.btn-lg {
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.dashboard-card .list-group-item {
+  background: rgba(0, 0, 0, 0.4) !important; /* Make background definitely dark */
+  border: none; /* Remove default Bootstrap border */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white border for separation */
+  color: #fff !important; /* Ensure text is white */
+}
+
+.dashboard-card .list-group-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+/* Explicitly ensure "No recent enrollments" text is white */
+.dashboard-card p.text-white {
+  color: #fff !important;
+}
+
+.dashboard-card .list-item-light-bg {
+  background: #fff !important;
+  color: #000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.25rem; /* Match Bootstrap's default list-group-item styling */
+  margin-bottom: 0.25rem; /* Space between items */
+}
+
+/* Ensure text inside list-item-light-bg is black */
+.dashboard-card .list-item-light-bg div {
+  color: #000 !important;
+}
+
+.dashboard-card .message-light-bg {
+  background: #fff !important;
+  color: #000 !important;
+  padding: 0.75rem 1.25rem; /* Match Bootstrap's default card-body padding */
+  border-radius: 0.25rem; /* Match Bootstrap's default card styling */
+  margin-bottom: 1rem; /* Space below the message */
+}
+
+/* Custom red text for specific elements */
+.text-red-important {
+  color: #dc3545 !important; /* Bootstrap's danger red */
+}
+
+/* Custom black text for specific elements */
+.text-black-important {
+  color: #000 !important;
+}
